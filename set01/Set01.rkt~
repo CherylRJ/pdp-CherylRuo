@@ -1,14 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-beginner-reader.ss" "lang")((modname Set01) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
-(require rackunit)
-(require "extras.rkt")
-
-(provide distance-to-origin)
-(provide string-first)
-(provide image-area)
-(provide string-insert)
-(provide string-delete)
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname Set01_functions) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 
 (require 2htdp/image)
 ;Exercise 13
@@ -16,7 +8,7 @@
 ;GIVEN:a real, a real
 ;RETURNS: a non-negative integer
 ;sqrt(x^2 + y^2))
-(define (distance-to-origin x y)
+(define (distance x y)
   (sqrt (+ (* x x) (* y y))))
 ;Exercise 15
 ;string-first: a string-> a 1String
